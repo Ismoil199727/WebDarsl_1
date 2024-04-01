@@ -1,0 +1,34 @@
+﻿@model List<WebDarsl_1.Models.Hodim>
+
+
+@{
+}
+<h1>Hodim</h1>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>FAMILYA</th>
+			<th>ISM</th>
+			<th>YOSH</th>
+			<th>JINSI</th>
+			<th>MAOSH</th>
+		</tr>
+	</thead>
+	<thead>
+		@foreach (var hodim in Model)
+		{
+			<tr>
+				<td>@hodim.Id</td>
+				<td>@hodim.familya</td>
+				<td>@hodim.ism</td>
+				<td>@hodim.yosh</td>
+				<td>@hodim.jins</td>
+				<td>@hodim.maosh</td>
+
+				<td> <a href="hodim/View/@hodim.Id">View</a></td>
+			</tr>
+		}
+	</thead>
+</table>

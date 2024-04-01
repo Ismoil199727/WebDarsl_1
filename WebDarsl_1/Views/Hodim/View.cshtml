@@ -1,0 +1,42 @@
+﻿@model WebDarsl_1.Models.HodimniYangilash
+
+@{
+}
+
+
+<h1>Edit Hodim</h1>
+<form method="post" action="View" class="mt-5">
+    <div class="mb-3">
+        <label for=""class="foem-label">ID</label>
+        <input type="text"class="form-control"asp-for="Id"readonly>
+     </div>
+    <div class="mb-3">
+        <label for="" class="form-label">FAMILYA</label>
+        <input type="text" class="form-control" asp-for="familya">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">ISM</label>
+        <input type="text" class="form-control" asp-for="ism">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">YOSH</label>
+        <input type="number" class="form-control" asp-for="yosh">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">JINSI</label>
+        <input type="text" class="form-control" asp-for="jins">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">MAOSH</label>
+        <input type="number" class="form-control" asp-for="maosh">
+    </div>
+
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <button type="submit"class="btn-danger"
+                                                           asp-action="Delete"
+                                                           asp-controller="Hodim">Delete</button>
+
+</form>
